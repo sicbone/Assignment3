@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Economica:700);
+body { background:url(media/symphony.png) #cacaca; margin:30px; }
+
+.textbox {
+    font: 20px 'Economica', sans-serif;
+    color: #000000;
+    background: #8D9BF7;
+	max-width: 250px;
+}
+
+a:link{
+    	text-decoration: None;
+}
