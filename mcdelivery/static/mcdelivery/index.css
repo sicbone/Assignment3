@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Economica:700);
+body { background:url(media/mc.png); background-repeat: no-repeat; background-size: cover;}
+
+.textbox {
+    font: 20px 'Economica', sans-serif;
+    border-radius: 0px 20px;
+    border: 2px solid;
+    text-align: left;
+    text-indent: 15px;
+    color: #000;
+    background: #FF3;
+	max-width: 250px;
+}
+
+.border{
+    padding: 20px;
+}
+
+a:link{
+    	text-decoration: None;
+}
+
+.total{
+    color:#FFF;
+}

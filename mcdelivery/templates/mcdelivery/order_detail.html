@@ -1,0 +1,22 @@
+{%load staticfiles%}
+{%load bootstrap3%}
+<link rel="stylesheet" type="text/css" href="{% static 'mcdelivery/detail.css' %}" />
+<head>
+    {# Load CSS and JavaScript #}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery=1%}
+    <title>Details</title>
+</head>
+
+<body>
+    <h2>
+        <div class="row"><div class="col-md-3">Customer name:</div>{{order.customer}}</div>
+        <div class="row"><div class="col-md-3">Order number:</div>{{order.id}}</div>
+    </h2>
+    <h3>
+        <div class="row"><div class="col-md-3">Order:</div>{{order.order}}</div>
+        <div class="row"><div class="col-md-3">Special request:</div>{{order.special_request}}</div>
+        <div class="row"><div class="col-md-3">Contact number:</div>{{order.contact_number}}</div>
+        <div class="row"><div class="col-md-3">Address:</div>{{order.address}}</div>
+    </h3>
+</body>
