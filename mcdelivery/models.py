@@ -10,9 +10,9 @@ class Order(models.Model):
     address = models.CharField(max_length=50)
     created = models.DateTimeField(auto_now_add=True, auto_now=False, null=True)
     updated = models.DateTimeField(auto_now_add=False, auto_now=True, null=True)
-   
+
     def get_absolute_url(self):
         return reverse("detail", kwargs={"pk":self.pk})
-   
+
     def __str__(self):
         return self.customer
