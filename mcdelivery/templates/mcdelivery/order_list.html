@@ -1,5 +1,7 @@
+{%extends 'mcdelivery/base.html'%}
 {%load staticfiles%}
 {%load bootstrap3%}
+{% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'mcdelivery/index.css' %}" />
 <head>
     {# Load CSS and JavaScript #}
@@ -27,3 +29,4 @@
 {% else %}
     <p>No orders are available.</p>
 {% endif %}
+{% endblock %}

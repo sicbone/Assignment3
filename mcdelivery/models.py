@@ -1,11 +1,13 @@
 from django.db import models
 from django.core.urlresolvers import reverse
+from accounts.models import UserProfile
 
 # Create your models here.
 class Order(models.Model):
+    user = models.ForeignKey(UserProfile)
     customer = models.CharField(max_length=50)
     order = models.TextField(max_length=255)
-    special_request = models.CharField(max_length=50)
+    special_request = models.CharField(max_length=50, blank=True, null=True)
     contact_number = models.IntegerField(max_length=10)
     address = models.CharField(max_length=50)
     created = models.DateTimeField(auto_now_add=True, auto_now=False, null=True)
